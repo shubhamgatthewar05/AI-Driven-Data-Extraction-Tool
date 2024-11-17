@@ -12,9 +12,9 @@ import re
 
 
 # API Keys......................................................................................................................................................................
-serpapi_key = "26938d37c0b54691a0d37ecf134930cef24bdeb34c17269b00291a54adc57780"
+serpapi_key = "ENTER YOUR SERPAPI_API HERE"
 
-hf_api_token = "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"
+hf_api_token = "ENTER YORU Hugging FACE TOKEN"
 hf_model_url = "https://api-inference.huggingface.co/models/openai-community/gpt2"
 
 
