@@ -1,6 +1,6 @@
-# **Enhanced AI-Driven Data Extraction Tool** ✨  
+# **Enhanced AI-Driven Data Extraction Tool** ✨
 
-This project is a versatile tool designed to simplify and automate the extraction of meaningful data from web searches. By leveraging the **Hugging Face API** and **Google Search API**, users can define prompts to retrieve specific information such as email addresses, founder names, or any other custom data.  
+This project is a versatile tool designed to simplify and automate the extraction of meaningful data from web searches. By leveraging the **Hugging Face API**, **Google Search API**, and **LangChain**, users can define prompts to retrieve specific information such as email addresses, founder names, or any other custom data.
 
 [![Demo Video](https://img.shields.io/badge/YouTube-Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/IJHSkFvh8eU?si=GnYJxBlN6oS9nWAu)
 
@@ -8,25 +8,25 @@ This project is a versatile tool designed to simplify and automate the extractio
 
 ## **🚀 Features**
 
-### **1. Multiple Data Input Options**  
-- **CSV Upload**: Upload a CSV file directly from your local system.  
+### **1. Multiple Data Input Options**
+- **CSV Upload**: Upload a CSV file directly from your local system.
 - **Google Sheets Integration**: Load data from a Google Sheet by entering its ID.
 
-### **2. Customizable Prompts for AI Extraction**  
-- Define multiple prompts to guide the AI in extracting specific details from web search results.  
-- Examples: *"Find the email address of {entity}"*, *"Extract the founder's name for {entity}"*.  
+### **2. Customizable Prompts for AI Extraction**
+- Define multiple prompts to guide the AI in extracting specific details from web search results.
+- Examples: *"Find the email address of {entity}"*, *"Extract the founder's name for {entity}"*.
 
-### **3. AI-Powered Data Processing**  
-- Uses Google Search API to retrieve relevant results for the selected entities.  
-- Processes the results using Hugging Face's GPT-2 model to extract the required information.
+### **3. AI-Powered Data Processing**
+- Uses Google Search API to retrieve relevant results for the selected entities.
+- Processes the results using **LangChain** and **Hugging Face's GPT-2** model to extract the required information.
 
-### **4. Email Address Detection**  
-- Employs regular expressions to dynamically identify and extract email addresses from the AI's output.  
+### **4. Email Address Detection**
+- Employs regular expressions to dynamically identify and extract email addresses from the AI's output.
 - Stores the extracted emails in a separate column in the results dataset.
 
-### **5. Export and Download Options**  
-- **CSV Export**: Download the extracted data in CSV format.  
-- **Google Sheets Export**: Directly export the results to a specified Google Sheet.  
+### **5. Export and Download Options**
+- **CSV Export**: Download the extracted data in CSV format.
+- **Google Sheets Export**: Directly export the results to a specified Google Sheet.
 
 ---
 
@@ -58,7 +58,7 @@ This project is a versatile tool designed to simplify and automate the extractio
 ## **🛠️ Usage**
 
 1. **Load Data**  
-   - Upload a CSV file or provide a Google Sheet ID to load your dataset.  
+   - Upload a CSV file or provide a Google Sheet ID to load your dataset.
 
 2. **Select Column and Rows**  
    - Choose the column containing the entities for extraction and select specific rows for processing.
@@ -67,7 +67,7 @@ This project is a versatile tool designed to simplify and automate the extractio
    - Define one or more prompts to guide the AI in extracting relevant information.
 
 4. **Run Extraction**  
-   - Click the **Run Extraction** button to start the process.  
+   - Click the **Run Extraction** button to start the process.
 
 5. **View Results**  
    - Results are displayed in real-time and can be downloaded or exported to Google Sheets.
@@ -76,7 +76,7 @@ This project is a versatile tool designed to simplify and automate the extractio
 
 ## **🖥️ Demo**
 
-[![Watch the Demo](https://img.shields.io/badge/YouTube-Watch_Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/IJHSkFvh8eU?si=GnYJxBlN6oS9nWAu)  
+[![Watch the Demo](https://img.shields.io/badge/YouTube-Watch_Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/IJHSkFvh8eU?si=GnYJxBlN6oS9nWAu)
 
 Watch a 2-minute walkthrough showcasing the tool's features, dashboard workflow, and key functionalities.
 
@@ -99,10 +99,10 @@ enhanced-ai-data-extraction/
 ## **📖 How It Works**
 
 1. **Search Results Retrieval**:  
-   - Fetches web search results for each entity using the SerpAPI.  
+   - Fetches web search results for each entity using the SerpAPI.
 
 2. **AI-Based Extraction**:  
-   - Processes search results with Hugging Face's GPT-2 to generate meaningful outputs based on user-defined prompts.  
+   - Processes search results with Hugging Face's GPT-2 and LangChain for data extraction based on user-defined prompts.
 
 3. **Email Extraction**:  
    - Dynamically identifies email addresses from the AI-generated text using regular expressions.
@@ -124,15 +124,15 @@ Sign up for a free or paid account on [SerpAPI](https://serpapi.com/) and obtain
 Generate a personal access token from [Hugging Face](https://huggingface.co/settings/tokens) for API usage.
 
 ### **3. Google Cloud Service Account**  
-Set up a service account in Google Cloud, enable Sheets API, and download the JSON key file.  
+Set up a service account in Google Cloud, enable Sheets API, and download the JSON key file.
 
 ---
 
 ## **🎯 Future Enhancements**
 
-- Add support for additional AI models (e.g., GPT-3 or similar advanced models).  
-- Include more visualization options for the extracted data.  
-- Implement rate-limiting and caching mechanisms for API efficiency.  
+- Add support for additional AI models (e.g., GPT-3 or similar advanced models).
+- Include more visualization options for the extracted data.
+- Implement rate-limiting and caching mechanisms for API efficiency.
 - Add support for multilingual data extraction.
 
 ---
@@ -149,4 +149,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to copy and customize this README for your GitHub project! Let me know if you need help with further enhancements.
+Let me know if you need any further updates or improvements!
